@@ -211,6 +211,23 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
 
 .js-reveal .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .js-reveal .reveal.in{opacity:1;transform:none}
+/* CHAMPIONSHIP */
+.champ-section{background:#16120d;color:#f7f3ec;padding:88px 0}
+.champ-badge{display:inline-block;background:#e1341a;color:#fff;font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:5px 14px;margin-bottom:16px}
+.champ-title{font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-weight:700;font-size:clamp(38px,6vw,76px);line-height:0.95;letter-spacing:-0.03em;text-transform:uppercase;color:#f7f3ec;margin-bottom:10px}
+.champ-sub{font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#c9a99f;margin-bottom:32px}
+.champ-heroes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px}
+.champ-hero{position:relative;overflow:hidden;aspect-ratio:3/2}
+.champ-hero img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.champ-hero:hover img{transform:scale(1.04)}
+.champ-portraits{display:flex;gap:8px;justify-content:center}
+.champ-port{position:relative;overflow:hidden;width:18%;aspect-ratio:3/4}
+.champ-port img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .5s ease}
+.champ-port:hover img{transform:scale(1.04)}
+.champ-cap{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;background:linear-gradient(to top,rgba(10,8,6,0.88) 0%,transparent 100%)}
+.champ-cap .pin{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#f08a73;margin-bottom:4px}
+.champ-cap .pt{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;color:#f7f3ec;line-height:1.1}
+@media(max-width:820px){.champ-heroes{grid-template-columns:1fr}.champ-portraits{flex-wrap:wrap;justify-content:center}.champ-port{width:44%;aspect-ratio:3/4}}
 </style>
 </head>
 <body>
@@ -219,6 +236,7 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
   <div class="wrap">
     <a href="#top" class="brand"><span class="num">8</span> Jax Kelley-Aranda</a>
     <div class="navlinks">
+      <a href="#champions">Champions</a>
       <a href="#film">Film</a>
       <a href="#player">Player</a>
       <a href="#profile">Profile</a>
@@ -272,13 +290,12 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
     <div class="stat"><div class="k">Wtd GPA</div><div class="v">3.59</div></div>
   </div>
 </div>
-
 <!-- FILM (moved up — coaches watch first) -->
 <section id="film">
   <div class="wrap">
     <div class="sec-num">02 — Game Film</div>
     <div class="film-head">
-      <h2 class="lead-h" style="margin-bottom:0">Watch the game.</h2>
+      <h2 class="lead-h" style="margin-bottom:0">Highlights.</h2>
       <div class="season-tag">Season 2025 / 2026</div>
     </div>
     <div class="reels">
@@ -299,25 +316,49 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
   </div>
 </section>
 
+<!-- NATIONAL CHAMPIONS -->
+<section id="champions" class="champ-section">
+  <div class="wrap">
+    <div class="sec-num" style="color:#f08a73">03 — National Champions</div>
+    <div><span class="champ-badge">Crossfire Premier XF Academy B10</span></div>
+    <h2 class="champ-title">2026 ECNL National Champions</h2>
+    <div class="champ-sub">Richmond, VA &middot; ECNL Finals &middot; July 2026</div>
+    <div class="champ-heroes">
+      <div class="champ-hero reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-national-champions-team-trophy.jpg" alt="Crossfire Premier XF Academy B10 team on stage with ECNL National Championship trophy">
+
+      </div>
+      <div class="champ-hero reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-national-champions-hat-toss.jpg" alt="Crossfire Premier XF Academy B10 ECNL National Champions hat toss celebration">
+
+      </div>
+      <div class="champ-hero reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-national-champions-arch.jpg" alt="Crossfire Premier XF Academy B10 ECNL National Champions arch photo with trophy">
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PLAYER -->
 <section id="player" style="background:#fff">
   <div class="wrap">
-    <div class="sec-num">03 — The Player</div>
-    <h2 class="lead-h">Beats his man. Then makes the difference.</h2>
+    <div class="sec-num">04 — The Player</div>
+    <h2 class="lead-h">Beats defenders. Creates chances. Produces.</h2>
     <div class="player-grid">
       <div class="body-col reveal">
-        <p>Jax Kelley-Aranda is a highly competitive, versatile attacker playing for Crossfire Premier — a national ECNL Club of the Year with multiple ECNL Championships to its name. Cultivated in that championship environment, he thrives on high-stakes competition.</p>
-        <p>He primarily anchors the pitch as a left winger, but his tactical flexibility lets him slide to the right or step into midfield to disrupt defenses and dictate tempo. Right-footed with a strong left, he's comfortable attacking down either flank.</p>
-        <p>Off the field, he carries a 3.59 weighted GPA and plans to pursue a degree in Business. He's looking for a collegiate home that challenges him as an elite athlete and a scholar — and he's ready to impact a high-level roster from day one.</p>
+        <p>Jax is a right-footed attacking player who does his best work wide. He takes his man on, wins those duels at a high rate, and produces when it counts. His first instinct is to go direct, but he reads the game well enough to know when to play simple and when to drive at goal. When he distributes, the weight and placement of his passes are precise.</p>
+        <p>He plays primarily as a left winger for Crossfire Premier XF Academy B10 ECNL, and covers ground across the front line and into central midfield when the game calls for it. A 2026 ECNL National Champion, he has trained and competed alongside some of the top youth players in the country and produced in that environment.</p>
+        <p>Off the pitch, Jax carries a 3.59 weighted GPA and plans to study Business. He enjoys travel, playing guitar, and spending time with family, friends and pets. He is looking for a program that pushes him in the classroom as much as on the field.</p>
       </div>
       <aside class="scout reveal">
         <div class="tag">Scouting card · 2025 / 26</div>
-        <h3>Direct threat on the flank</h3>
-        <p>Direct in transition, dangerous in tight spaces, tactically flexible across the front line and midfield.</p>
+        <h3>Wide attacker. Creates and converts.</h3>
+        <p>Goes at defenders 1v1, generates chances and goals from the wing, and covers multiple positions across the front line.</p>
         <div class="row"><span>Positions</span><span>LW · RW · CM</span></div>
         <div class="row"><span>Dominant foot</span><span>Right (strong left)</span></div>
-        <div class="row"><span>On-field role</span><span>Creates &amp; finishes</span></div>
-        <div class="row"><span>Recognition</span><span>ECNL NW All-Conf</span></div>
+        <div class="row"><span>Style</span><span>Direct, creates and converts</span></div>
+        <div class="row"><span>Recognition</span><span>ECNL NW All-Conf · 2026 National Champion</span></div>
       </aside>
     </div>
   </div>
@@ -326,7 +367,7 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
 <!-- PROFILE -->
 <section id="profile">
   <div class="wrap">
-    <div class="sec-num">04 — Athletic Profile</div>
+    <div class="sec-num">05 — Athletic Profile</div>
     <h2 class="lead-h">On the field.</h2>
     <div class="cards">
       <div class="card reveal">
@@ -369,7 +410,7 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
 <!-- ACADEMICS -->
 <section id="academics" style="background:#fff">
   <div class="wrap">
-    <div class="sec-num">05 — Academics</div>
+    <div class="sec-num">06 — Academics</div>
     <h2 class="lead-h">Scholar athlete.</h2>
     <div class="acwrap">
       <div class="reveal">
@@ -391,12 +432,13 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
 <!-- RECORD -->
 <section id="record">
   <div class="wrap">
-    <div class="sec-num">06 — The Record</div>
+    <div class="sec-num">07 — The Record</div>
     <h2 class="lead-h">Honors &amp; milestones.</h2>
     <div class="tl">
-      <div class="item reveal"><div class="yr">2024, 2025, 2026</div><div><h3>ECNL National Playoffs</h3><p>Qualified for the ECNL National Playoffs in back-to-back-to-back seasons.</p></div></div>
-      <div class="item reveal"><div class="yr">2024, 2025, 2026</div><div><h3>ECNL NW Conference Champions</h3><p>Latest conference title with XF Academy B10.</p></div></div>
+      <div class="item reveal"><div class="yr">2026</div><div><h3>ECNL National Champions</h3><p>2026 ECNL National Championship title with Crossfire Premier XF Academy B10 in Richmond, VA.</p></div></div>
       <div class="item reveal"><div class="yr">2026</div><div><h3>Club América Cup Champions</h3><p>International-level tournament title.</p></div></div>
+      <div class="item reveal"><div class="yr">2024, 2025, 2026</div><div><h3>ECNL National Playoffs</h3><p>Qualified for the ECNL National Playoffs in back-to-back-to-back seasons.</p></div></div>
+      <div class="item reveal"><div class="yr">2024, 2025, 2026</div><div><h3>ECNL NW Conference Champions</h3><p>Three consecutive conference titles with XF Academy B10.</p></div></div>
       <div class="item reveal"><div class="yr">2025</div><div><h3>Surf Cup NW · Las Vegas Cup Champions</h3><p>Top finishes at premier national showcase tournaments.</p></div></div>
       <div class="item reveal"><div class="yr">2024 &amp; 2025</div><div><h3>Zip Fizz Cup Champions</h3><p>Champions in consecutive years.</p></div></div>
       <div class="item reveal"><div class="yr">2025</div><div><h3>ECNL NW All-Conference</h3><p>Individual recognition among the top players in the Northwest conference.</p></div></div>
@@ -409,10 +451,23 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
 <!-- GALLERY -->
 <section id="gallery" style="background:#fff">
   <div class="wrap">
-    <div class="sec-num">07 — Gallery</div>
+    <div class="sec-num">08 — Gallery</div>
     <h2 class="lead-h">On the big stages.</h2>
-    <p class="body-col" style="margin-bottom:30px">Match action from premier tournaments and showcases — Club América Cup and Manchester City Cup, ECNL conference and national playoff play, and a matchup at the University of Washington.</p>
+    <p class="body-col" style="margin-bottom:30px">Match action from premier tournaments and showcases including the ECNL National Championship, Club América Cup, Manchester City Cup, ECNL conference and national playoff play, and a matchup at the University of Washington.</p>
     <div class="gallery-grid">
+      <!-- Championship portraits -->
+      <div class="g port reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-national-champ-trophy.jpg" alt="Jax Kelley-Aranda holding the 2026 ECNL National Championship trophy">
+        <div class="cap"><div class="pin">Tournament</div><div class="pt">ECNL National Champs</div><div class="pd">Champions · 2026</div></div>
+      </div>
+      <div class="g port reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-media-day.jpg" alt="Jax Kelley-Aranda XF Academy ECNL media day">
+        <div class="cap"><div class="pin">Tournament</div><div class="pt">ECNL Media Day</div><div class="pd">Champions · 2026</div></div>
+      </div>
+      <div class="g port reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-national-champions-team-celebration.jpg" alt="Crossfire Premier XF Academy B10 ECNL National Champions team field celebration">
+        <div class="cap"><div class="pin">Tournament</div><div class="pt">ECNL National Champs</div><div class="pd">Champions · 2026</div></div>
+      </div>
       <!-- Row: two landscape branding shots -->
       <div class="g land reveal">
         <img loading="lazy" src="/images/jax-kelley-aranda-club-america-cup.jpg" alt="Jax Kelley-Aranda at the Club América Cup with XF Academy">
@@ -453,6 +508,14 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
         <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-phoenix-showcase-field.jpg" alt="Jax Kelley-Aranda on the field at the ECNL Phoenix Showcase">
         <div class="cap"><div class="pin">Showcase</div><div class="pt">ECNL PHX Showcase</div><div class="pd">National showcase</div></div>
       </div>
+      <div class="g land reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-national-champions-white-kit.jpg" alt="Crossfire Premier XF Academy B10 ECNL National Champions team photo white kit">
+        <div class="cap"><div class="pin">National Champions</div><div class="pt">ECNL Finals</div><div class="pd">White kit team photo · 2026</div></div>
+      </div>
+      <div class="g port reveal">
+        <img loading="lazy" src="/images/jax-kelley-aranda-ecnl-media-day-arms-crossed.jpg" alt="Jax Kelley-Aranda XF Academy ECNL media day">
+        <div class="cap"><div class="pin">Tournament</div><div class="pt">ECNL Media Day</div><div class="pd">Champions · 2026</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -460,7 +523,7 @@ footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.13);margin-top:50p
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <div class="sec-num">08 — Get in Touch</div>
+    <div class="sec-num">09 — Get in Touch</div>
     <h2 class="lead-h">Contact.</h2>
     <p class="body-col" style="margin-bottom:6px">Direct channels to Jax and his family. The fastest way to reach out is by email.</p>
 
